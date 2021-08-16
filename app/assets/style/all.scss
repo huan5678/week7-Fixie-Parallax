@@ -1,1 +1,14 @@
-@import './layout/_index.scss';
+@import 
+'../../../node_modules/bootstrap/scss/functions',
+'helpers/variables',
+'../../../node_modules/bootstrap/scss/utilities',
+'utilities/utilities',
+'../../../node_modules/bootstrap/scss/bootstrap',
+
+'mixin/mixin',
+'base/reset',
+'base/base',
+'helpers/helper',
+
+'layout/index'
+;

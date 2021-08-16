@@ -5,6 +5,8 @@
 
 // Color system
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,900;1,900&display=swap');
+
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -67,14 +69,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #000000DE !default;//$blue !default;
+$secondary:     #00000099 !default; //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #F1F5F6 !default; //$gray-100 !default;
+$dark:          #121212 !default; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,9 +88,14 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "white":      $white,
 ) !default;
 // scss-docs-end theme-colors-map
+
+// scss-docs-start theme-colors-rgb
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+// scss-docs-end theme-colors-rgb
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
@@ -198,6 +205,126 @@ $cyan-600: shade-color($cyan, 20%) !default;
 $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
+
+$blues: (
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900
+) !default;
+
+$indigos: (
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900
+) !default;
+
+$purples: (
+  "purple-100": $purple-200,
+  "purple-200": $purple-100,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900
+) !default;
+
+$pinks: (
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900
+) !default;
+
+$reds: (
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900
+) !default;
+
+$oranges: (
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900
+) !default;
+
+$yellows: (
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900
+) !default;
+
+$greens: (
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900
+) !default;
+
+$teals: (
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "teal-700": $teal-700,
+  "teal-800": $teal-800,
+  "teal-900": $teal-900
+) !default;
+
+$cyans: (
+  "cyan-100": $cyan-100,
+  "cyan-200": $cyan-200,
+  "cyan-300": $cyan-300,
+  "cyan-400": $cyan-400,
+  "cyan-500": $cyan-500,
+  "cyan-600": $cyan-600,
+  "cyan-700": $cyan-700,
+  "cyan-800": $cyan-800,
+  "cyan-900": $cyan-900
+) !default;
 // fusv-enable
 
 // Characters which are escaped by the escape-svg function
@@ -214,13 +341,14 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
 $enable-grid-classes:         true !default;
+$enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
@@ -230,7 +358,7 @@ $enable-important-utilities:  true !default;
 
 // Prefix for :root CSS variables
 
-$variable-prefix:             bs- !default;
+$variable-prefix:             fx- !default;
 
 // Gradient
 //
@@ -245,16 +373,38 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // Control the default styling of most Bootstrap elements by modifying these
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
+$base: 16;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  0:  0,
+  0\.5: (4/$base)*$spacer,
+  1:  (8/$base)*$spacer, 
+  1\.25: (10/$base)*$spacer,
+  1\.5:  (12/$base)*$spacer,
+  2:  (16/$base)*$spacer, 
+  2\.5: (20/$base)*$spacer,
+  3:  (24/$base)*$spacer, 
+  3\.5:  (28/$base)*$spacer,
+  3\.75:  (30/$base)*$spacer,
+  4:  (32/$base)*$spacer, 
+  4\.5:  (36/$base)*$spacer,
+  5:  (40/$base)*$spacer, 
+  5\.25:  (42/$base)*$spacer, 
+  5\.5:   (44/$base)*$spacer,
+  6:  (48/$base)*$spacer, 
+  6\.5:   (52/$base)*$spacer,
+  7:  (56/$base)*$spacer, 
+  7\.5:  (60/$base)*$spacer,
+  8:  (64/$base)*$spacer, 
+  8\.5:  (68/$base)*$spacer, 
+  9:  (72/$base)*$spacer, 
+  10: (80/$base)*$spacer, 
+  11: (88/$base)*$spacer, 
+  12: (96/$base)*$spacer,
+  xl: (192/$base)*$spacer,
+  auto: auto
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -280,13 +430,35 @@ $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
+// Utilities maps
+//
+// Extends the default `$theme-colors` maps to help create our utilities.
+
+// scss-docs-start utilities-colors
+$utilities-colors: map-merge(
+  $theme-colors-rgb,
+  (
+    "black": to-rgb($black),
+    "white": to-rgb($white),
+    "body":  to-rgb($body-color)
+  )
+) !default;
+// scss-docs-end utilities-colors
+
+// scss-docs-start utilities-text-colors
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text") !default;
+// scss-docs-end utilities-text-colors
+
+// scss-docs-start utilities-bg-colors
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg") !default;
+// scss-docs-end utilities-bg-colors
 
 // Links
 //
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -367,7 +539,7 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                #121212 !default;//$gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -397,6 +569,7 @@ $transition-base:             all .2s ease-in-out !default;
 $transition-fade:             opacity .15s linear !default;
 // scss-docs-start collapse-transition
 $transition-collapse:         height .35s ease !default;
+$transition-collapse-width:   width .35s ease !default;
 // scss-docs-end collapse-transition
 
 // stylelint-disable function-disallowed-list
@@ -416,7 +589,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:           'Merriweather', serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -441,6 +615,13 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
+$weightVal: (
+  light: 300,
+  base: 400,
+  med: 500,
+  bold: 700,
+) !default;
+
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
@@ -448,15 +629,21 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
-
+$sizer: 1rem;
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
+  bs: $sizer,
+  1:  (96/$base)*$sizer,
+  2:  (72/$base)*$sizer,
+  3:  (48/$base)*$sizer,
+  4:  (24/$base)*$sizer,
+  5:  (14/$base)*$sizer,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -692,7 +879,7 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $white !default;
+$input-bg:                              $body-bg !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
@@ -725,6 +912,8 @@ $input-height-sm:                       add($input-line-height * 1em, add($input
 $input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+$form-color-width:                      3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
@@ -906,12 +1095,25 @@ $form-validation-states: (
 $zindex-dropdown:                   1000 !default;
 $zindex-sticky:                     1020 !default;
 $zindex-fixed:                      1030 !default;
-$zindex-modal-backdrop:             1040 !default;
-$zindex-offcanvas:                  1050 !default;
-$zindex-modal:                      1060 !default;
+$zindex-offcanvas-backdrop:         1040 !default;
+$zindex-offcanvas:                  1045 !default;
+$zindex-modal-backdrop:             1050 !default;
+$zindex-modal:                      1055 !default;
 $zindex-popover:                    1070 !default;
 $zindex-tooltip:                    1080 !default;
 // scss-docs-end zindex-stack
+
+$zindex: (
+  '0': 0,
+  '100': 1100,
+  '200': 1200,
+  '250': 1250,
+  '300': 1300,
+  '400': 1400,
+  '500': 1500,
+  '750': 1750,
+  'auto': 'auto',
+)!default;
 
 
 // Navs
@@ -1078,6 +1280,13 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 // scss-docs-end pagination-variables
 
 
+// Placeholders
+
+// scss-docs-start placeholders
+$placeholder-opacity-max:           .5 !default;
+$placeholder-opacity-min:           .2 !default;
+// scss-docs-end placeholders
+
 // Cards
 
 // scss-docs-start card-variables
@@ -1085,8 +1294,9 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
+$card-border-radius:                $border-radius !default;
+$card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
@@ -1126,7 +1336,7 @@ $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
 $accordion-icon-width:                    1.25rem !default;
-$accordion-icon-color:                    $accordion-color !default;
+$accordion-icon-color:                    $accordion-button-color !default;
 $accordion-icon-active-color:             $accordion-button-active-color !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
@@ -1452,6 +1662,8 @@ $offcanvas-title-line-height:       $modal-title-line-height !default;
 $offcanvas-bg-color:                $modal-content-bg !default;
 $offcanvas-color:                   $modal-content-color !default;
 $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
+$offcanvas-backdrop-bg:             $modal-backdrop-bg !default;
+$offcanvas-backdrop-opacity:        $modal-backdrop-opacity !default;
 // scss-docs-end offcanvas-variables
 
 // Code
@@ -1466,3 +1678,42 @@ $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
+
+
+//自定義區域
+$flex-directionVal: (row, column, row-reverse, column-reverse) !default;
+
+$wrapVal: (wrap, nowrap, wrap-reverse) !default;
+
+$justify-contentVal: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+) !default;
+
+$displayVal: (flex, block, inline, inline-block, none) !default;
+
+$itemsVal: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    baseline: baseline,
+    stretch: stretch,
+) !default;
+
+$object-fitVal: (fill, contain, cover, none, scale-down) !default;
+
+$alignVal: (baseline, top, middle, bottom, text-bottom, text-top) !default;
+
+$heightVal: (
+  50: 50vh,
+  60: 60vh,
+  70: 70vh,
+  80: 80vh,
+  85: 85vh,
+  90: 90vh,
+  100: 100vh
+) !default;

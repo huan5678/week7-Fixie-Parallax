@@ -1,0 +1,24 @@
+.logo{
+  min-height: 3rem;
+  min-width: 7rem;
+  background-image: url(../images/logo-fixie.svg);
+  @include hideText;
+}
+
+.link--block::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  gap: 1rem;
+  padding: 0;
+}

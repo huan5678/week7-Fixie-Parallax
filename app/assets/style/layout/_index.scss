@@ -1,5 +1,21 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.hero{
+  min-height: 61.5rem;
+}
+
+.banner{
+  &01{
+    max-width: 100%;
+    height: calc(54rem - 2px);
+  }
+  &--bg{
+    @include banner ('../images/img4.jpg',40rem)
+  }
+  &--block{
+    min-height: 40rem;
+    padding-bottom: 4.8125rem;
+  }
+}
+
+.content {
+  min-height: 60rem;
 }
