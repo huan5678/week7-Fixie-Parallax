@@ -4,154 +4,156 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<section class="pos-relative">
-  <div class="container">
-    <div class="row g-0 hero">
-      <div class="d-flex flex-column justify-center items-star">
-        <div class="col-md-6 mb-6">
-          <h1 class="fs-1 font-serif fw-black text-primary fst-italic">
-            Single Speed, <br>Single Life.
-          </h1>
+<main class="overflow-hidden">
+  <section class="pos-relative">
+    <div class="container">
+      <div class="row g-0 hero">
+        <div class="d-flex flex-column justify-center items-star">
+          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+            <h1 class="fs-1 font-serif fw-black text-primary fst-italic">
+              Single Speed, <br>Single Life.
+            </h1>
+          </div>
+          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1300">
+            <p class="text-secondary fs-4">
+              More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the advantage of simplicity compared with the standard multi-geared bicycle.
+            </p>
+          </div>
+          <div class="col-md-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="2100">
+            <a href="#" class="w-100 btn bg-light bg-dark-hover text-primary text-opacity-100 text-white-hover border py-2" onclick="event.preventDefault()">
+              Shop Now
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 mb-6">
-          <p class="text-secondary fs-4">
-            More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the advantage of simplicity compared with the standard multi-geared bicycle.
+        <div class="col-md-6 pos-absolute top-0 start-50" data-aos="slide-left" data-aos-duration="800" data-aos-delay="1300">
+          <div class="d-flex justify-between flex-column">
+            <img src="./assets/images/img1.jpg" class="object-cover banner01" alt="banner1">
+            <nav class="d-flex justify-between">
+              <a href="#" class="border bg-dark-hover text-white-hover bg-opacity-100 text-opacity-100" onclick="event.preventDefault()">
+                <span class="material-icons-outlined fs-3 lh-1 p-4.5 text-primary">
+                  arrow_back_ios
+                  </span>
+              </a>
+              <a href="#" class="border bg-dark-hover text-white-hover bg-opacity-100 text-opacity-100" onclick="event.preventDefault()">
+                <span class="material-icons-outlined fs-3 lh-1 p-4.5 text-primary">
+                  arrow_forward_ios
+                  </span>
+              </a>
+              <span class="border w-100 font-serif fw-black fst-italic fs-3 lh-1 px-6 py-3.75 text-primary">
+                Collection 001-xx
+              </span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row g-0 bg-light content">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-md-6 pos-relative" data-aos="slide-right" data-aos-duration="800">
+          <img src="./assets/images/img2.jpg" class="object-cover img-fluid content" alt="">
+          <div class="pos-absolute top-50 end-0 translate-middle-y">
+            <a href="#" class="bg-white p-2" onclick="event.preventDefault()">Read More</a>
+          </div>
+        </div>
+        <div class="pos-relative col-md-6 d-flex flex-column justify-between pt-12 pe-12 pb-xl" data-aos="slide-left" data-aos-duration="800">
+          <p class="offset-2 col-md-9 text-secondary">
+            A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared bike in the same gear.
           </p>
-        </div>
-        <div class="col-md-2">
-          <a href="#" class="w-100 btn bg-light bg-dark-hover text-primary text-opacity-100 text-white-hover border py-2" onclick="event.preventDefault()">
-            Shop Now
-          </a>
+          <h2 class="fs-2 text-primary font-serif fw-black fst-italic text-end">
+            <span class="d-block mb-3 lax-slide-left">One Gear,</span>
+            <span class="d-block lax-slide-right">Many Variations</span>
+          </h2>
+          <div class="pos-absolute top-50 start-0 translate-middle-y">
+            <a href="#" class="bg-black p-2 align-middle link-white" onclick="event.preventDefault()"><span class="material-icons-outlined">
+              arrow_forward
+              </span></a>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 pos-absolute top-0 start-50">
-        <div class="d-flex justify-between flex-column">
-          <img src="./assets/images/img1.jpg" class="object-cover banner01" alt="banner1">
-          <nav class="d-flex justify-between">
-            <a href="#" class="border bg-dark-hover text-white-hover bg-opacity-100 text-opacity-100" onclick="event.preventDefault()">
-              <span class="material-icons-outlined fs-3 lh-1 p-4.5 text-primary">
-                arrow_back_ios
-                </span>
+    </div>
+  </section>
+  <section class="row g-0 bg-light content">
+    <div class="container">
+      <div class="row flex-row-reverse g-0">
+        <div class="col-md-6 pos-relative" data-aos="slide-left" data-aos-duration="800">
+          <img src="./assets/images/img3.jpg" class="object-cover img-fluid content" alt="">
+          <div class=" pos-absolute top-50 start-0 translate-middle-y">
+            <a href="#" class="bg-white p-2" onclick="event.preventDefault()">
+              <span class="material-icons-outlined">
+              arrow_forward
+              </span>
             </a>
-            <a href="#" class="border bg-dark-hover text-white-hover bg-opacity-100 text-opacity-100" onclick="event.preventDefault()">
-              <span class="material-icons-outlined fs-3 lh-1 p-4.5 text-primary">
-                arrow_forward_ios
-                </span>
+          </div>
+        </div>
+        <div class="pos-relative col-md-6 d-flex flex-column-reverse justify-between pb-12 ps-12 pt-xl" data-aos="slide-right" data-aos-duration="800">
+          <p class="offset-2 col-md-8 text-secondary text-end">
+            Without the added parts required for a fully geared drive train—derailleurs, shifters, cables, cable carriers, multiple chain rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle weighs less than its geared equivalent.
+          </p>
+          <h2 class="order-1 fs-2 text-primary font-serif fw-black fst-italic">
+            <span class="d-block mb-3 lax-slide-left">Stripped-Down</span>
+            <span class="d-block lax-slide-right">Performance</span>
+          </h2>
+          <div class="pos-absolute top-50 end-0 translate-middle-y">
+            <a href="#" class="bg-black p-2 align-middle link-white" onclick="event.preventDefault()">
+              Read More
             </a>
-            <span class="border w-100 font-serif fw-black fst-italic fs-3 lh-1 px-6 py-3.75 text-primary">
-              Collection 001-xx
-            </span>
-          </nav>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="row bg-light content">
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-md-6 pos-relative">
-        <img src="./assets/images/img2.jpg" class="object-cover img-fluid content" alt="">
-        <div class=" pos-absolute top-50 end-0 translate-middle-y">
-          <a href="#" class="bg-white p-2" onclick="event.preventDefault()">Read More</a>
-        </div>
-      </div>
-      <div class="pos-relative col-md-6 d-flex flex-column justify-between pt-12 pe-12 pb-xl">
-        <p class="offset-2 col-md-9 text-secondary">
-          A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared bike in the same gear.
-        </p>
-        <h2 class="fs-2 text-primary font-serif fw-black fst-italic text-end">
-          <span class="d-block mb-3">One Gear,</span>
-          <span class="d-block">Many Variations</span>
-        </h2>
-        <div class="pos-absolute top-50 start-0 translate-middle-y">
-          <a href="#" class="bg-black p-2 align-middle link-white" onclick="event.preventDefault()"><span class="material-icons-outlined">
-            arrow_forward
-            </span></a>
+  </section>
+  <section class="d-flex flex-column justify-center items-center p-12">
+    <h3 class="fs-3 text-primary font-serif fw-black fst-italic mb-3" data-aos="slide-up" data-aos-duration="400">A collection built for<br> regular commuters</h3>
+    <p class="text-secondary text-center col-4" data-aos="fade-up" data-aos-duration="400" data-aos-delay="800">
+      Riders unknown to each other commonly greet each other when on bikes. As in many subcultures, this feeling of belonging is a key factor in recruiting and retaining participants.
+    </p>
+  </section>
+  <section class="banner--bg mb-12">
+    <div class="container">
+      <div class="row items-end banner--block">
+        <div class="col-md-4 bg-white p-2" data-aos="slide-up" data-aos-duration="800">
+          <h3 class="fs-4 text-primary font-serif fw-black fst-italic mb-2" data-aos="slide-up" data-aos-duration="1600">
+            “I like to ride. Fixed gear. No brakes.<br> Can’t stop. Don’t want to, either.”
+          </h3>
+          <p class="text-secondary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="2400">Premium Rush (2012)</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="row bg-light content">
-  <div class="container">
-    <div class="row flex-row-reverse g-0">
-      <div class="col-md-6 pos-relative">
-        <img src="./assets/images/img3.jpg" class="object-cover img-fluid content" alt="">
-        <div class=" pos-absolute top-50 start-0 translate-middle-y">
-          <a href="#" class="bg-white p-2" onclick="event.preventDefault()">
-            <span class="material-icons-outlined">
-            arrow_forward
-            </span>
-          </a>
+  </section>
+  <section class="container mb-12">
+    <div class="row">
+      <div class="col-md-4" data-aos="slide-up" data-aos-duration="800">
+        <div class="card border-0">
+          <img src="./assets/images/img5.jpg" alt="All who cycle are my friends" class="img-fluid object-cover mb-3">
+          <div class="card-body">
+            <h3 class="fs-4 text-primary font-serif fw-black fst-italic">All who cycle are my friends</h3>
+            <p class="text-seocndary">2020.4.27</p>
+            <p class="text-secondary">A rider from Stockholm interviewed for an article about the phenomenon notes that riding a bike imparts a feeling of freedom to the rider…</p>
+          </div>
         </div>
       </div>
-      <div class="pos-relative col-md-6 d-flex flex-column-reverse justify-between pb-12 ps-12 pt-xl">
-        <p class="offset-2 col-md-8 text-secondary text-end">
-          Without the added parts required for a fully geared drive train—derailleurs, shifters, cables, cable carriers, multiple chain rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle weighs less than its geared equivalent.
-        </p>
-        <h2 class="order-1 fs-2 text-primary font-serif fw-black fst-italic">
-          <span class="d-block mb-3">Stripped-Down</span>
-          <span class="d-block">Performance</span>
-        </h2>
-        <div class="pos-absolute top-50 end-0 translate-middle-y">
-          <a href="#" class="bg-black p-2 align-middle link-white" onclick="event.preventDefault()">
-            Read More
-          </a>
+      <div class="col-md-4" data-aos="slide-up" data-aos-duration="800" data-aos-delay="1000">
+        <div class="card border-0">
+          <img src="./assets/images/img6.jpg" alt="Swedish riders and enthusiasts" class="img-fluid object-cover mb-3">
+          <div class="card-body">
+            <h3 class="fs-4 text-primary font-serif fw-black fst-italic">Swedish riders and enthusiasts</h3>
+            <p class="text-seocndary">2020.3.11</p>
+            <p class="text-secondary">There are also several bicycle clubs throughout Sweden with a fixed-gear niche. Komet Club Rouler is a club based in Gothenburg, annually arranging Svart Kat…</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="d-flex flex-column justify-center items-center p-12">
-  <h3 class="fs-3 text-primary font-serif fw-black fst-italic mb-3">A collection built for<br> regular commuters</h3>
-  <p class="text-secondary text-center col-4">
-    Riders unknown to each other commonly greet each other when on bikes. As in many subcultures, this feeling of belonging is a key factor in recruiting and retaining participants.
-  </p>
-</section>
-<section class="banner--bg mb-12">
-  <div class="container">
-    <div class="row items-end banner--block">
-      <div class="col-md-4 bg-white p-2">
-        <h3 class="fs-4 text-primary font-serif fw-black fst-italic mb-2">
-          “I like to ride. Fixed gear. No brakes.<br> Can’t stop. Don’t want to, either.”
-        </h3>
-        <p class="text-secondary">Premium Rush (2012)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container mb-12">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="./assets/images/img5.jpg" alt="All who cycle are my friends" class="img-fluid object-cover mb-3">
-        <div class="card-body">
-          <h3 class="fs-4 text-primary font-serif fw-black fst-italic">All who cycle are my friends</h3>
-          <p class="text-seocndary">2020.4.27</p>
-          <p class="text-secondary">A rider from Stockholm interviewed for an article about the phenomenon notes that riding a bike imparts a feeling of freedom to the rider…</p>
+      <div class="col-md-4" data-aos="slide-up" data-aos-duration="800" data-aos-delay="1400">
+        <div class="card border-0">
+          <img src="./assets/images/img7.jpg" alt="The Australian fixie culture" class="img-fluid object-cover mb-3">
+          <div class="card-body">
+            <h3 class="fs-4 text-primary font-serif fw-black fst-italic">The Australian fixie culture</h3>
+            <p class="text-seocndary">2020.2.29</p>
+            <p class="text-secondary">Online stores in Australia ship partially-assembled bikes directly to consumers, considerably undercutting prices at typical brick and mortar stores…</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="./assets/images/img6.jpg" alt="Swedish riders and enthusiasts" class="img-fluid object-cover mb-3">
-        <div class="card-body">
-          <h3 class="fs-4 text-primary font-serif fw-black fst-italic">Swedish riders and enthusiasts</h3>
-          <p class="text-seocndary">2020.3.11</p>
-          <p class="text-secondary">There are also several bicycle clubs throughout Sweden with a fixed-gear niche. Komet Club Rouler is a club based in Gothenburg, annually arranging Svart Kat…</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="./assets/images/img7.jpg" alt="The Australian fixie culture" class="img-fluid object-cover mb-3">
-        <div class="card-body">
-          <h3 class="fs-4 text-primary font-serif fw-black fst-italic">The Australian fixie culture</h3>
-          <p class="text-seocndary">2020.2.29</p>
-          <p class="text-secondary">Online stores in Australia ship partially-assembled bikes directly to consumers, considerably undercutting prices at typical brick and mortar stores…</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</main>

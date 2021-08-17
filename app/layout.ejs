@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <nav class="navbar border px-6 py-3 d-flex justify-between">
+    <nav class="navbar border px-6 py-3 d-flex justify-between" data-aos="slide-down" data-aos-duration="300">
       <h2 class="logo pos-relative">
         Fixie
         <a href="#" class="link--block"></a>
@@ -27,7 +27,7 @@
 
     <%- contents %>
 
-    <footer class="container bg-light px-6 py-3">
+    <footer class="container bg-light px-6 py-3" data-aos="slide-up" data-aos-duration="200" data-aos-once="true">
       <nav class="d-flex justify-between items-center">
       <ul class="d-flex justify-between">
         <li><a href="#" class="p-3 link-primary">Product</a></li>
@@ -44,8 +44,6 @@
       </nav>
     </footer>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

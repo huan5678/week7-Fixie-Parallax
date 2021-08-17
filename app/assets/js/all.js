@@ -11,7 +11,7 @@ AOS.init({
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 160, // offset (in px) from the original trigger point
+  offset: 100, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 800, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
@@ -20,3 +20,32 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+window.onload = function () {
+
+  lax.init()
+
+  lax.addDriver('scrollY', function () {
+    return window.scrollY
+  })
+
+  lax.addElements('.lax-slide-right',{
+    scrollY: {
+      translateX: [
+        ["elInY", "elCenterY", "elOutY"],
+        // [0, 'screenWidth/2', 'screenWidth'],
+        [0, 50, 100],
+      ]
+    }
+  }
+  )
+
+  lax.addElements('.lax-slide-left',{
+    scrollY: {
+      translateX: [
+        ["elInY", "elCenterY", "elOutY"],
+        [0, -50, -100],
+      ]
+    }
+  }
+  )
+}
