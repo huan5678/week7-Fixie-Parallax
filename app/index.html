@@ -4,22 +4,22 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<main class="overflow-hidden">
+<main class="pt-12 overflow-hidden">
   <section class="pos-relative">
     <div class="container">
       <div class="row g-0 hero">
         <div class="d-flex flex-column justify-center items-star">
-          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
             <h1 class="fs-1 font-serif fw-black text-primary fst-italic">
               Single Speed, <br>Single Life.
             </h1>
           </div>
-          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1300">
+          <div class="col-md-6 mb-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
             <p class="text-secondary fs-4">
               More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the advantage of simplicity compared with the standard multi-geared bicycle.
             </p>
           </div>
-          <div class="col-md-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="2100">
+          <div class="col-md-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="900">
             <a href="#" class="w-100 btn bg-light bg-dark-hover text-primary text-opacity-100 text-white-hover border py-2" onclick="event.preventDefault()">
               Shop Now
             </a>
@@ -51,8 +51,10 @@ current: index
   <section class="row g-0 bg-light content">
     <div class="container">
       <div class="row g-0">
-        <div class="col-md-6 pos-relative" data-aos="slide-right" data-aos-duration="800">
-          <img src="./assets/images/img2.jpg" class="object-cover img-fluid content" alt="">
+        <div class="col-md-6 pos-relative bg-black" data-aos="slide-right" data-aos-duration="800">
+          <div class="overflow-hidden">
+            <img src="./assets/images/img2.jpg" class="object-cover img-fluid content lax-slide-bg-right" alt="">
+          </div>
           <div class="pos-absolute top-50 end-0 translate-middle-y">
             <a href="#" class="bg-white p-2" onclick="event.preventDefault()">Read More</a>
           </div>
@@ -77,9 +79,11 @@ current: index
   <section class="row g-0 bg-light content">
     <div class="container">
       <div class="row flex-row-reverse g-0">
-        <div class="col-md-6 pos-relative" data-aos="slide-left" data-aos-duration="800">
-          <img src="./assets/images/img3.jpg" class="object-cover img-fluid content" alt="">
-          <div class=" pos-absolute top-50 start-0 translate-middle-y">
+        <div class="col-md-6 pos-relative bg-black" data-aos="slide-left" data-aos-duration="800">
+          <div class="overflow-hidden">
+            <img src="./assets/images/img3.jpg" class="object-cover img-fluid content lax-slide-bg-left" alt="">
+          </div>
+          <div class="pos-absolute top-50 start-0 translate-middle-y">
             <a href="#" class="bg-white p-2" onclick="event.preventDefault()">
               <span class="material-icons-outlined">
               arrow_forward

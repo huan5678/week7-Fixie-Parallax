@@ -11,7 +11,7 @@ AOS.init({
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 100, // offset (in px) from the original trigger point
+  offset: 130, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 800, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
@@ -33,19 +33,44 @@ window.onload = function () {
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
         // [0, 'screenWidth/2', 'screenWidth'],
-        [0, 50, 100],
+        [0, 80, 160],
       ]
     }
-  }
-  )
+  })
 
   lax.addElements('.lax-slide-left',{
     scrollY: {
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, -50, -100],
+        [0, -80, -160],
       ]
     }
-  }
-  )
+  })
+
+  lax.addElements('.lax-slide-bg-right',{
+    scrollY: {
+      translateX: [
+        ["elInY", "elCenterY", "elOutY"],
+        [0, 80, 160],
+      ],
+      scale: [
+        ["elInY", "elCenterY", "elOutY"],
+        [1.4, 1.3, 1.2],
+      ]
+    }
+  })
+
+  lax.addElements('.lax-slide-bg-left',{
+    scrollY: {
+      translateX: [
+        ["elInY", "elCenterY", "elOutY"],
+        [0, -80, -160],
+      ],
+      scale: [
+        ["elInY", "elCenterY", "elOutY"],
+        [1.4, 1.3, 1.2],
+      ]
+    }
+  })
+
 }
